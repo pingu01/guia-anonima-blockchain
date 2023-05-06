@@ -11,9 +11,14 @@ export const Marketplace = () => {
                 </h1>
             </div>
             <div>
-                
+            <div className="">
+                   <h1>Carbon Coin - Big Farm</h1>
+                   <h2>Seller: Ambiental Reserve in Mato Grosso</h2>
+                   <h2>10 BTGDOL / OCO </h2>
+                   <p>Description: Two square kilometers of the native latin-american biom "Pantanal".</p>
+                    <a href="/buy-token">compra</a>
+                </div>
             </div>
-            
         </div>
     )
 };

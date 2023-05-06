@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { HomePage } from './Pages/HomePage';
 import { Marketplace } from './Pages/Marketplace';
+import { BuyToken } from './Pages/BuyToken';
 
 
 const AppLayout = () => (
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         path: "/marketplace",
         element: <Marketplace />,
       },
+      {
+        path: "/buy-token",
+        element: <BuyToken />,
+      }
     ],
   }
 ]);
