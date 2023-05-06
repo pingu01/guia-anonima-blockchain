@@ -4,8 +4,7 @@ import { useState } from "react";
 
 import { Link } from 'react-router-dom';
 
-
-import logoImage from '../assets/Logo_Echosec.svg';
+import logoImage from '../assets/Sem título.png';
 import test from '../assets/Group 75.svg'
 
 interface NavbarProps {
@@ -16,34 +15,39 @@ interface NavbarProps {
 export const Navbar = () => {
   return(
     <nav className="w-full max-h-40 flex items-center justify-center flex-wrap">
-      <div className="mr-8 ml-8 h-28 w-full flex items-center justify-between text-white border-b-2">
+      <div className="h-28 w-full flex items-center justify-between bg-gray-700">
         <div className="flex items-center flex-shrink-0 text-white">
           <Link to={"/"}>
-            <img src={test} className="w-52 h-20" alt="Logo Echosec" />
+            <img src="../assets/Sem título.png" />
           </Link>
           {/* <span className="font-bold text-4xl">ECHOSEC</span> */}
         </div>
         <div className="gap-16 flex items-center">
           <Link 
             to={"/"} 
-            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-gray-300 hover:text-white">
+            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-white hover:text-green-400">
               Home
           </Link>
           <Link 
             to={"/processo-seletivo"}
-            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-gray-300 hover:text-white">
-              Processo seletivo
+            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-white hover:text-green-400">
+              About
           </Link>
           <Link 
             to={"/sobre-nos"} 
-            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-gray-300 hover:text-white">
-              Sobre nós
+            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-white hover:text-green-400">
+              Marketplace
+          </Link>
+          <Link
+            to={"/sobre-nos"}
+            className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-white hover:text-green-400">
+              Donate
           </Link>
           <Link 
               to={"/sobre-nos"} 
               className="block lg:inline-block lg:mt-0">
-            <button className="w-40 h-14 font-montserrat font-medium text-lg text-gray-300 border-gray-300 border-2 rounded-2xl flex items-center justify-center hover:border-white hover:text-white">
-              Inscreva-se
+            <button className="w-40 h-14 font-montserrat font-medium text-lg text-black border-black border-2 bg-orange-400 rounded-2xl flex items-center justify-center hover:text-white">
+              Connect to Metamask
             </button>
             </Link>
         </div>

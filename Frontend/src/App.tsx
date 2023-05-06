@@ -1,7 +1,7 @@
 import './styles/global.css'
 import { Navbar } from './components/Navbar';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import { HomePage } from './components/HomePage';
+import { HomePage } from './Pages/HomePage';
 
 const AppLayout = () => (
   <div className="App">
