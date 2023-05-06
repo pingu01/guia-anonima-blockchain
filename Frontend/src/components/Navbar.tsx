@@ -16,7 +16,7 @@ export const Navbar = () => {
   return(
     <nav className="w-full max-h-40 flex items-center justify-center flex-wrap">
       <div className="h-28 w-full flex items-center justify-between bg-gray-700">
-        <div className="flex items-center flex-shrink-0 text-white">
+        <div className="mx-10 flex items-center flex-shrink-0 text-white">
           <Link to={"/"}>
             <img src="../assets/Sem título.png" />
           </Link>
@@ -46,7 +46,7 @@ export const Navbar = () => {
           <Link 
               to={"/sobre-nos"} 
               className="block lg:inline-block lg:mt-0">
-            <button className="w-40 h-14 font-montserrat font-medium text-lg text-black border-black border-2 bg-orange-400 rounded-2xl flex items-center justify-center hover:text-white">
+            <button className="mr-10 w-40 h-14 font-montserrat font-medium text-lg text-black border-black border-2 bg-orange-400 rounded-2xl flex items-center justify-center hover:text-white">
               Connect to Metamask
             </button>
             </Link>
