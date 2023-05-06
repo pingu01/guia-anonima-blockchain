@@ -2,6 +2,8 @@ import './styles/global.css'
 import { Navbar } from './components/Navbar';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { HomePage } from './Pages/HomePage';
+import { Marketplace } from './Pages/Marketplace';
+
 
 const AppLayout = () => (
   <div className="App">
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/sobre-nos",
         // element: <SobreNos />,
+      },
+      {
+        path: "/marketplace",
+        element: <Marketplace />,
       },
     ],
   }

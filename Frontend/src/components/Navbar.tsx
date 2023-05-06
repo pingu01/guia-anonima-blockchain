@@ -34,7 +34,7 @@ export const Navbar = () => {
               About
           </Link>
           <Link 
-            to={"/sobre-nos"} 
+            to={"/marketplace"} 
             className="font-montserrat block font-medium text-lg lg:inline-block lg:mt-0 text-white hover:text-green-400">
               Marketplace
           </Link>
