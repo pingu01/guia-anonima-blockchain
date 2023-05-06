@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import * as ContextMenu from '@radix-ui/react-context-menu';
 
 export const Marketplace = () => {
     return (
@@ -9,6 +9,9 @@ export const Marketplace = () => {
                 <h1 className="font-roboto font-bold text-white text-5xl">
                     Marketplace
                 </h1>
+            </div>
+            <div>
+                
             </div>
             
         </div>
