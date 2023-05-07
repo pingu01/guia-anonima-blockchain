@@ -2,6 +2,9 @@ import './styles/global.css'
 import { Navbar } from './components/Navbar';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { HomePage } from './Pages/HomePage';
+import { BuyPage } from './Pages/BuyPage';
+import { AboutPage } from './Pages/AboutPage';
+import { CampainPage } from './Pages/CampainsPage';
 
 const AppLayout = () => (
   <div className="App">
@@ -20,12 +23,16 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/processo-seletivo",
-        // element: <ProcessoSeletivo />,
+        path: "/about",
+        element: <AboutPage />,
       },
       {
-        path: "/sobre-nos",
-        // element: <SobreNos />,
+        path: "/campaigns",
+        element: <CampainPage  />,
+      },
+      {
+        path: "/buy",
+        element: <BuyPage />,
       },
     ],
   }
